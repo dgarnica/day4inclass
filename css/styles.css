@@ -1,3 +1,32 @@
+/*/// Multi-Use ///*/
+
+/*/// Body Begin ///*/
+
 body {
   margin: 1em;
+  background-color: #fdecdc;
+}
+
+/*/// Header & Navigation ///*/
+
+nav {
+  width: 100%;
+}
+
+nav>ul {
+  margin-top: 1em;
+}
+
+nav>ul li {
+  position: relative;
+  width: 12em;
+  padding: 0 1.5em;
+}
+
+.nav-pills>li.active>a {
+  background-color: #876633;
+}
+
+.nav-pills>li>a {
+  color: #876633;
 }
