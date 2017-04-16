@@ -13,14 +13,35 @@ nav {
   width: 100%;
 }
 
+nav>img {
+  position: absolute;
+  height: 3em;
+  width: 6em;
+  margin-top: 0.75em;
+}
+
 nav>ul {
   margin-top: 1em;
 }
 
+/*// For Mobile //*/
+
 nav>ul li {
   position: relative;
-  width: 12em;
-  padding: 0 1.5em;
+  left: 0.5em;
+  width: 28%;
+  margin-right: 0.5em;
+}
+
+/*// For Desktop Screens //*/
+
+@media only screen and (min-width: 768px) {
+
+  nav>ul li {
+    position: relative;
+    width: 12em;
+    padding: 0 1.5em;
+  }
 }
 
 .nav-pills>li.active>a {
@@ -29,4 +50,27 @@ nav>ul li {
 
 .nav-pills>li>a {
   color: #876633;
+}
+
+/*/// Main Begins ///*/
+
+main>div.jumbotron {
+  height: 20em;
+  margin-top: 3em;
+  margin-bottom: 1em;
+}
+
+.row-style {
+  margin-top: 1em;
+}
+
+.well-style {
+  height: 20em;
+  margin-right: 0.5em;
+}
+
+.well-style-sma {
+  margin-left: 2.75em;
+  height: 20em;
+  width: 20em;
 }
