@@ -24,31 +24,104 @@ nav>ul {
   margin-top: 1em;
 }
 
-/*// For Mobile //*/
+/*// For Very Small Screens //*/
 
 nav>ul li {
   position: relative;
-  left: 0.5em;
-  width: 28%;
-  margin-right: 0.5em;
+  left: 7em;
+  width: 50%;
+  top: -1.15em;
 }
 
-/*// For Desktop Screens //*/
+#logo {
+  position: relative;
+  width: 50%;
+  top: 6em;
+}
 
-@media only screen and (min-width: 768px) {
+/*// For Mobile //*/
+
+@media only screen and (min-width: 495px) and (max-width: 800px) {
 
   nav>ul li {
     position: relative;
-    width: 12em;
-    padding: 0 1.5em;
+    left: 0.5em;
+    width: 6em;
+    margin-top: -1em;
+  }
+
+  #logo {
+    position: relative;
+    width: 35%;
+    left: 1em;
+    top: 3em;
   }
 }
+
+/*// For Desktop Screens//*/
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+
+  nav>ul li {
+    position: relative;
+    top: -1.5em;
+    left: 4.5em;
+    width: 14em;
+  }
+
+  #logo {
+    position: relative;
+    width: 20%;
+    left: 1em;
+    top: 3em;
+  }
+}
+
+
+/*// For Large Screens //*/
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+
+  nav>ul li {
+    position: relative;
+    top: -3em;
+    left: 1em;
+    width: 18em;
+  }
+
+  #logo {
+    position: relative;
+    width: 20%;
+    left: 1em;
+    top: 3em;
+  }
+}
+
+/*// For HD Screens //*/
+
+@media only screen and (min-width: 1600px) {
+
+  nav>ul li {
+    position: relative;
+    width: 30em;
+    top: -4em;
+  }
+
+  #logo {
+    position: relative;
+    width: 20%;
+    left: 1em;
+    top: 3em;
+  }
+}
+
+/*// Links Styling //*/
 
 .nav-pills>li.active>a {
   background-color: #876633;
 }
 
-.nav-pills>li>a {
+.nav-pills li>a {
   color: #876633;
 }
 
