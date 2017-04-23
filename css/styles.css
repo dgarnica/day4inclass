@@ -5,6 +5,7 @@
 body {
   margin: 1em;
   background-color: #fdecdc;
+  overflow-x: hidden;
 }
 
 /*/// Header & Navigation ///*/
@@ -127,23 +128,62 @@ nav>ul li {
 
 /*/// Main Begins ///*/
 
+/*// Hero-tron //*/
+
 main>div.jumbotron {
   height: 20em;
   margin-top: 3em;
   margin-bottom: 1em;
 }
 
+/*// 6 Wells x 2 Rows //*/
+
 .row-style {
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
   margin-top: 1em;
 }
 
 .well-style {
   height: 20em;
-  margin-right: 0.5em;
+  width: 40em;
+  flex: 1 center;
+  align-self: center;
 }
 
-.well-style-sma {
-  margin-left: 2.75em;
+.well-style-small {
   height: 20em;
   width: 20em;
+  flex: 1;
+  align-self: center;
+  margin-top: 1em;
+}
+
+@media only screen and (min-width: 800px) {
+
+  .row-style {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: flex-start;
+    margin: 2em 0em;
+    height: 25em;
+    width: 100%;
+  }
+
+  .well-style {
+    height: 25em;
+    width: 50%;
+    margin: 0em 1em;
+    flex: 2 space-between;
+    align-self: flex-start;
+  }
+
+  .well-style-small {
+    height: 25em;
+    width: 25em;
+    flex: 1 space-around;
+    align-self: flex-end;
+    margin: 0em 1em;
+  }
 }
